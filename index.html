@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação do Projeto - Desafio Final</title>
+    
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Ícones modernos via Lucide Icons -->
+    <script src="https://unpkg.com"></script>
+</head>
+<body>
+
+    <div class="presentation-container">
+        
+        <!-- Slide 1: Introdução e Design Aprimorado -->
+        <div class="slide active" id="slide-1">
+            <div class="icon-box icon-purple">
+                <i data-lucide="sparkles" class="slide-icon"></i>
+            </div>
+            <h1>Inovação Tecnológica com IA</h1>
+            <p>Seja bem-vindo à evolução do nosso projeto. Criamos uma solução integrada que une inteligência computacional a uma interface totalmente fluida e moderna.</p>
+        </div>
+
+        <!-- Slide 2: Momento de Interação com a Plateia -->
+        <div class="slide" id="slide-2">
+            <div class="icon-box icon-amber">
+                <i data-lucide="help-circle" class="slide-icon"></i>
+            </div>
+            <h1>Momento Interativo</h1>
+            <p>Como você acredita que a Inteligência Artificial impactará a sua rotina de estudos no próximo ano?</p>
+            
+            <div class="interaction-box">
+                <button class="interactive-btn" onclick="votar('Aumentará muito a produtividade')">Aumentará a produtividade</button>
+                <button class="interactive-btn" onclick="votar('Tornará o aprendizado mais personalizado')">Personalizará o ensino</button>
+            </div>
+            <div class="result-message" id="resultado-voto"></div>
+        </div>
+
+        <!-- Slide 3: Impacto e Reflexão Final -->
+        <div class="slide" id="slide-3">
+            <div class="icon-box icon-emerald">
+                <i data-lucide="trending-up" class="slide-icon"></i>
+            </div>
+            <h1>Impacto & Transformação</h1>
+            <p>Nosso projeto não visa apenas automatizar processos, mas sim empoderar pessoas através do conhecimento e acessibilidade digital.</p>
+            
+            <div class="impact-card">
+                <p class="impact-text">
+                    "A tecnologia só cumpre seu verdadeiro papel quando gera reflexão e constrói um futuro mais inclusivo."
+                </p>
+            </div>
+        </div>
+
+        <!-- Botões de Navegação -->
+        <div class="controls">
+            <button class="nav-btn" id="prev-btn" onclick="mudarSlide(-1)" disabled>
+                <i data-lucide="chevron-left"></i> Anterior
+            </button>
+            <button class="nav-btn" id="next-btn" onclick="mudarSlide(1)">
+                Próximo <i data-lucide="chevron-right"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
